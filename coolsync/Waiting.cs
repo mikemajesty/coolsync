@@ -15,6 +15,7 @@ namespace coolsync
             ReferenciarNoCancellationToken = new CancellationTokenSource();
             Cancel = ReferenciarNoCancellationToken.Token;
         }
+
         private CancellationToken ReferenciarNoTask()
         {
             try
@@ -24,10 +25,8 @@ namespace coolsync
             }
             catch (Exception erro)
             {
-
                 throw new Exception(erro.Message);
             }
-
         }
 
         public void CancelTask()
@@ -36,15 +35,11 @@ namespace coolsync
             {
                 if (this.Cancel.IsCancellationRequested)
                     ReferenciarNoCancellationToken?.Cancel();
-
-               
             }
             catch (Exception erro)
             {
-
                 throw new Exception(erro.Message);
             }
-
         }
 
         public void Start(Action action)
@@ -56,7 +51,6 @@ namespace coolsync
             }
             catch (Exception erro)
             {
-
                 throw new Exception(erro.Message);
             }
         }
