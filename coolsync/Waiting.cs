@@ -47,7 +47,7 @@ namespace coolsync
             try
             {
                 Control.CheckForIllegalCrossThreadCalls = false;
-                new Task(action, Cancel).Start();
+                new Task(action, Cancel)?.Start();
             }
             catch (Exception erro)
             {
