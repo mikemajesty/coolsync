@@ -30,14 +30,14 @@ namespace coolsync
 
         }
 
-        public void CancelTask(Form form)
+        public void CancelTask()
         {
             try
             {
-                ReferenciarNoCancellationToken.Cancel();
-
                 if (this.Cancel.IsCancellationRequested)
-                    form?.Close();
+                    ReferenciarNoCancellationToken?.Cancel();
+
+               
             }
             catch (Exception erro)
             {
@@ -46,6 +46,7 @@ namespace coolsync
             }
 
         }
+
         public void Start(Action action)
         {
             try
@@ -58,7 +59,6 @@ namespace coolsync
 
                 throw new Exception(erro.Message);
             }
-
         }
     }
 }
