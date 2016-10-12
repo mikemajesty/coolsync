@@ -18,28 +18,14 @@ namespace coolsync
 
         private CancellationToken ReferenciarNoTask()
         {
-            try
-            {
-                CancellationToken ct = ReferenciarNoCancellationToken.Token;
-                return ct;
-            }
-            catch (Exception erro)
-            {
-                throw new Exception(erro.Message);
-            }
+            CancellationToken ct = ReferenciarNoCancellationToken.Token;
+            return ct;
         }
 
         public void CancelTask()
         {
-            try
-            {
-                if (this.Cancel.IsCancellationRequested)
-                    ReferenciarNoCancellationToken?.Cancel();
-            }
-            catch (Exception erro)
-            {
-                throw new Exception(erro.Message);
-            }
+            if (this.Cancel.IsCancellationRequested)
+                ReferenciarNoCancellationToken?.Cancel();
         }
 
         public void Start(Action action)
