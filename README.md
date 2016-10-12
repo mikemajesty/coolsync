@@ -1,4 +1,4 @@
-# coolsync - Use multi thread easily 
+# Coolsync - Use multi thread easily 
 <hr/>
 #How to install
 ``Install-Package coolsync``
