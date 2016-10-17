@@ -4,7 +4,6 @@
 ``Install-Package coolsync``
 <br/>
 <br/>
-<br/>
 #How to use
 [![imgExplique.png](https://s9.postimg.org/af669lcvz/img_Explique.png)](https://postimg.org/image/njbqma4xn/)
 <br/>
