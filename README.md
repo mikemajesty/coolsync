@@ -5,7 +5,23 @@
 <br/>
 <br/>
 ### How to use
-[![imgExplique.png](https://s9.postimg.org/af669lcvz/img_Explique.png)](https://postimg.org/image/njbqma4xn/)
+```
+  private void start_task_click(object sender, EventArgs e)
+  {
+      Waiting sync = new Waiting();
+
+      sync.Start(Execute);
+      sync.CancelTask();
+  }
+
+  private void Execute()
+  {
+      for (int cont = 0; cont < 10000000; cont++)
+      {
+          textBox1.Text = cont.ToString();
+      }
+  }
+```
 <br/>
 <br/>
 <br/>
