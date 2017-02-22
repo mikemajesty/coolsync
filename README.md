@@ -5,7 +5,7 @@
 <br/>
 <br/>
 ### How to use
-```
+``` C#
   private void start_task_click(object sender, EventArgs e)
   {
       Waiting sync = new Waiting();
