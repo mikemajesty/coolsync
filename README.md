@@ -1,5 +1,6 @@
 # Coolsync - Use multi thread easily 
 <hr/>
+
 ### How to install
 
 ```
