@@ -7,9 +7,6 @@
 Install-Package coolsync
 ```
 
-<br/>
-<br/>
-
 ### How to use
 
 ``` C#
